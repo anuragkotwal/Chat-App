@@ -39,7 +39,7 @@ io.on('connection', (socket) => {
 
     socket.on('sendMessage',(message,callback) => {
         const user = getUser(socket.id);
-            // user.username = user.username.charAt(0).toUpperCase() + user.username.slice(1);
+            user.username = user.username.charAt(0).toUpperCase() + user.username.slice(1);
             io.to(user.room).emit('message',generatedMsg(message,user.username));
             callback();
     })
