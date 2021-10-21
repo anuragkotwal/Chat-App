@@ -25,8 +25,8 @@ io.on('connection', (socket) => {
             return callback(error);
         }
         socket.join(user.room);
-        socket.emit('message',generatedMsg(msg,'Admin'));
         const uname = user.username.charAt(0).toUpperCase() + user.username.slice(1);
+        socket.emit('message',generatedMsg(`Welcome ${uname}!`,'Admin'));
         socket.broadcast.to(user.room).emit('message',generatedMsg(`${uname} has joined!`,'Admin'));
 
         io.to(user.room).emit('room',{

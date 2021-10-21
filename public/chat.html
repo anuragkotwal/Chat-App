@@ -3,9 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <title>Chat App</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="/img/favicon.png">
-        <link rel="stylesheet" href="/css/styles.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+
     </head>
     <body>
         <div class="chat">
@@ -15,11 +17,13 @@
                 <div id="msg" class="chat__messages"></div>
                 
                 <div class="compose">
-                    <form id="sendmsg">
-                        <input name="message" placeholder="Type your message" required autocomplete="off"> 
-                        <button>send</button>
+                    <form id="sendmsg" class="d-flex flex-column align-items-start">
+                        <input name="message" placeholder="Type your message" required autocomplete="off" class="form-control mb-2"> 
+                        <div class="button-wrapper">
+                            <button class="btn btn-dark btn-md btn-block mb-2">Send</button>
+                            <button id="send-loc" class="btn btn-dark btn-md btn-block mb-2">Send Location</button>
+                        </div>
                     </form>
-                    <button id="send-loc">Send Location</button>
                 </div>
             </div>
         </div>

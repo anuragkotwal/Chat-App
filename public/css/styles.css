@@ -35,25 +35,7 @@ input {
     border: 1px solid #eeeeee;
     padding: 12px;
     outline: none;
-}
-
-button {
-    cursor: pointer;
-    padding: 12px;
-    background: #7C5CBF;
-    border: none;
-    color: white;
-    font-size: 16px;
-    transition: background .3s ease;
-}
-
-button:hover {
-    background: #6b47b8;
-}
-
-button:disabled {
-    cursor: default;
-    background: #7c5cbf94;
+    
 }
 
 /* Join Page Styles */
@@ -93,8 +75,8 @@ button:disabled {
     height: 100vh;
     color: white;
     background: #333744;
-    width: 225px;
-    overflow-y: scroll
+    width: 200px;
+    overflow-y: scroll  
 }
 
 /* Chat styles */
@@ -107,6 +89,7 @@ button:disabled {
 }
 
 .chat__messages {
+    display: block;
     flex-grow: 1;
     padding: 24px 24px 0 24px;
     overflow-y: scroll;
@@ -136,10 +119,10 @@ button:disabled {
 /* Message Composition Styles */
 
 .compose {
-    display: flex;
-    flex-shrink: 0;
+    display: inline-block;
+    flex-shrink: 50;
     margin-top: 16px;
-    padding: 24px;
+    padding: 15px;
 }
 
 .compose form {
