@@ -1,47 +1,9 @@
 /* General Styles */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 16px;
-}
-
-input {
-    font-size: 14px;
-}
-
-body {
-    line-height: 1.4;
-    color: #333333;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-h1 {
-    margin-bottom: 16px;
-}
-
-label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 8px;
-    color: #777;
-}
-
-input {
-    border: 1px solid #eeeeee;
-    padding: 12px;
-    outline: none;
-    
-}
-
 /* Join Page Styles */
 
 .centered-form {
-    background: #333744;
+    background-image: url("/svg/sectionBG.svg");    
     width: 100vw;
     height: 100vh;   
     display: flex;
@@ -51,7 +13,7 @@ input {
 
 .centered-form__box {
     box-shadow: 0px 0px 17px 1px #1D1F26;
-    background: #F7F7FA;
+    background-image: url("/svg/cardBG.svg");
     padding: 24px;
     width: 250px;
 }
@@ -74,7 +36,7 @@ input {
 .chat__sidebar {
     height: 100vh;
     color: white;
-    background: #333744;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);    
     width: 200px;
     overflow-y: scroll  
 }
@@ -86,8 +48,8 @@ input {
     display: flex;
     flex-direction: column;
     max-height: 100vh;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
 }
-
 .chat__messages {
     display: block;
     flex-grow: 1;
@@ -98,7 +60,8 @@ input {
 /* Message Styles */
 
 .message {
-    margin-bottom: 16px;   
+    margin-bottom: 16px; 
+    color: white;  
 }
 
 .message__name {
@@ -108,7 +71,6 @@ input {
 }
 
 .message__meta {
-    color: #777;
     font-size: 14px;
 }
 
@@ -148,7 +110,6 @@ input {
 .room-title {
     font-weight: 400;
     font-size: 22px;
-    background: #2c2f3a;
     padding: 24px;   
 }
 
@@ -164,3 +125,28 @@ input {
     font-weight: 300;
     padding: 12px 24px 0 24px;
 }
+
+section {
+    background-image: url("/svg/sectionBG.svg");
+    }
+    .card {
+      background-image: url("/svg/cardBG.svg");
+    }
+    .form-field {
+      margin: 14px;
+    }
+    .form-field input::placeholder {
+        color: rgb(114, 114, 114);
+    }
+
+    .form-item button {
+      background-color: #1971ca;
+      text-transform: unset !important;
+    } 
+    .form-item button:hover {
+      background-color: #185EA5;
+    }
+    .fa{
+      font-size:24px;
+    }
+    .material-icons.md-48 { font-size: 10rem; }

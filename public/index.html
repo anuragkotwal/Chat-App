@@ -7,10 +7,81 @@
         <link rel="icon" href="/img/favicon.png">
         <link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     </head>
     <body>
-        <div class="centered-form">
+        <section class="vh-100">
+            <div class="container">
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="card" style="border-radius: 30px; margin-top: 9.5rem;">
+                  <div class="card-body">
+                    <div class="row justify-content-center">
+                      <div class="col-md-10 col-lg-6 col-xl-5 order-2">
+                        <p
+                          class="text-center h1 pt-5 m-5 text-white"
+                        >
+                          Join
+                        </p>
+                        <form class="mx-1 mx-md-4" action="/chat.html">
+                          <div class="d-flex flex-row align-items-center mb-3">
+                            <i class="fa fa-user fa-lg me-3 fa-fw"></i>
+                            <div class="form-outline flex-fill mb-0">
+                              <div class="form-field">
+                                <input
+                                type="text"
+                                name="username" 
+                                placeholder="Enter your username"
+                                class="form-control"
+                                required
+                                />
+                              </div>
+                            </div>
+                          </div>
+      
+                          <div class="d-flex flex-row align-items-center mb-1">
+                            <i class="fa fa-user fa-lg me-3 fa-fw"></i>
+                            <div class="form-outline flex-fill mb-0">
+                              <div class="form-field">
+                                <input
+                                type="text" name="room" placeholder="Enter room name" required
+                                class="form-control"
+                                />
+                              </div>
+                            </div>
+                        </div>
+      
+                          <div
+                            class="d-flex justify-content-center mx-4 mb-3 mb-lg-3"
+                          >
+                            <div class="form-item">
+                              <button
+                                type="submit"
+                                class="waves-effect waves-light btn"
+                                id="btn"
+                              >
+                                <i class="material-icons right">Join</i>
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-xl-7 d-flex align-items-center mb-4">
+                        <img
+                          src="/svg/log-in-girl.svg"
+                          alt="Sample image"
+                          width="70%"
+                          height="70%"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- <div class="centered-form">
             <div class="centered-form__box">
                 <h1 align="center">Join</h1>
                 <form action="/chat.html">
@@ -21,6 +92,6 @@
                     <button class="btn btn-dark">Join</button>
                 </form>
             </div>
-        </div>
+        </div> -->
     </body>
 </html>
